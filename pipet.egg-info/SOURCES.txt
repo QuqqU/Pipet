@@ -1,8 +1,0 @@
-setup.py
-pipet/__init__.py
-pipet.egg-info/PKG-INFO
-pipet.egg-info/SOURCES.txt
-pipet.egg-info/dependency_links.txt
-pipet.egg-info/entry_points.txt
-pipet.egg-info/requires.txt
-pipet.egg-info/top_level.txt

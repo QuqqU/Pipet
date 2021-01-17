@@ -1,4 +1,0 @@
-
-        [console_scripts]
-        pipet=pipet.scripts.cli:pipet
-    

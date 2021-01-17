@@ -1,43 +1,43 @@
 import click
 
+
 @click.group()
 def pipet():
     pass
 
-@click.command()
+
+@click.command(help='automatically create flask web app')
 def create():
-    '''automatically create flask web app'''
     print("create!!")
 
 
-@click.command()
+@click.command(help='create_json_project')
 @click.option(
-    '-n',
-    '--name',
+    '-n', '--name',
     'name',
-    default='name',
+    default='new_project',
     show_default=True
 )
 @click.option(
     '--db',
     'database',
-    type=click.Choice(('sqlite3','postgresql','mysql')),
+    type=click.Choice(('sqlite3', 'postgresql', 'mysql')),
     default='sqlite3',
+    show_default=True
 )
-def json(name,database):
-    '''create_json_project'''
-    print(name,database)
+def create_json(name, database):
+    print(name, database)
     print("json!!")
 
 
-@click.command()
+@click.command(help='print_current_project status')
 def status():
-    '''print_current_project status'''
     print('No Project')
 
+
 pipet.add_command(create)
-pipet.add_command(json)
+pipet.add_command(create_json)
 pipet.add_command(status)
 
-if __name__=='__main__':
+if __name__ == '__main__':
     pipet()
