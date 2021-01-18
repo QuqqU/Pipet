@@ -10,6 +10,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        pipet=pipet.scripts.cli:pipet
+        pipet=pipet.cli:pipet
     ''',
 )
