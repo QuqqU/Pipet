@@ -2,7 +2,7 @@ import click
 
 
 @click.group()
-@click.help_option('--help','-h')
+@click.help_option('--help', '-h')
 def pipet():
     pass
 
