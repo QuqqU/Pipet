@@ -1,11 +1,11 @@
 import click
+import os, sys
 
 
 @click.group()
 @click.help_option('--help','-h')
 def pipet():
     pass
-
 
 @click.command(help='automatically create flask web app')
 def create():
@@ -29,6 +29,10 @@ def create():
 def create_json(name, database):
     print(name, database)
     print("json!!")
+
+# static.json, dynamic.json -> pipet make --json
+# db.json -> pipet make --db
+
 
 
 @click.command(help='print_current_project status')
